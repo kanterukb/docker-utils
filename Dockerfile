@@ -4,7 +4,7 @@ MAINTAINER Bogdan Kanteruk <kanterukb@gmail.com>
 
 RUN apt-get update \
     && apt-get install -y traceroute curl iputils-ping dnsutils netcat-openbsd jq nmap htop iftop net-tools \
-        mc \
+        openssh-client mc lynx \
     && rm -rf /var/lib/apt/lists/*
 
 COPY Dockerfile /Dockerfile
